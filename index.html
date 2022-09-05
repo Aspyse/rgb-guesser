@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RGB Trainer</title>
+
+  <link rel="stylesheet" href="rgb.css">
+</head>
+
+<body>
+  <main>
+    <div id="color-tile"></div>
+    <div class="slider-wrapper">
+        <input type="range" min="0" max="255" value="0" class="slider" id="r-slider">
+        <p class="channel-label">Red</p>
+        <p class="slider-text" id="r-text">0</p>
+    </div>
+    <div class="slider-wrapper">
+        <input type="range" min="0" max="255" value="0" class="slider" id="g-slider">
+        <p class="channel-label">Green</p>
+        <p class="slider-text" id="g-text">0</p>
+    </div>
+    <div class="slider-wrapper">
+        <input type="range" min="0" max="255" value="0" class="slider" id="b-slider">
+        <p class="channel-label">Blue</p>
+        <p class="slider-text" id="b-text">0</p>
+    </div>
+    <div id="buttons-wrapper">
+        <input type="button" value="Submit" class="button" onclick="submit()">
+        <input type="button" value="Reset" class="button" onclick="reset()">
+    </div>
+    <p id="results-log"></p>
+  </main>
+  <script src="rgb.js"></script>
+</body>
+</html>
